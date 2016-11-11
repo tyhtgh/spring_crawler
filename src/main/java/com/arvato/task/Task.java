@@ -5,14 +5,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
-import com.arvato.carwleer.AdCrawleerOne;
-
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.springframework.beans.factory.annotation.Configurable;
@@ -31,7 +27,7 @@ public class Task {
 	private static Logger logger2 = Logger
 			.getLogger("File2");
 	
-	//@Scheduled(fixedRate = 300000)
+	@Scheduled(fixedRate = 300000)
 	public void cheshi() {
 		System.out.println("cheshi The time is now "
 				+ dateFormat.format(new Date()));
